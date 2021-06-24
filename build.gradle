@@ -7,8 +7,6 @@ group 'org.example'
 version '0.1'
 description 'FristPlugin'
 
-sourceCompatibility = 1.8
-
 repositories {
     mavenCentral()
 }
@@ -27,8 +25,6 @@ patchPluginXml {
     sinceBuild = '201'
     untilBuild = '221.*'
 }
-
-compileJava.options.encoding = 'UTF-8'
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'

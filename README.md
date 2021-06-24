@@ -1,5 +1,10 @@
 # CustomWordTranslator
 - - -
+
+![Downloads](https://img.shields.io/jetbrains/plugin/d/17105:pluginId)
+![Version](https://img.shields.io/jetbrains/plugin/v/17105:pluginId)
+
+
 개발중 사용하는 단어에 대한 용어를 매번 찾아보는 일을 최소화 하기 위하여 제작된 메이티 플러그인 입니다.   
 사용하는 단어는 프로퍼티 값으로 저장되어 있으므로 새로운 단어가 생길경우 업데이트가 이루어져야 합니다. 
  - 기능

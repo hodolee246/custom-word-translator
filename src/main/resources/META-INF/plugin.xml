@@ -6,19 +6,18 @@
 
     <description><![CDATA[
     <h1>CustomWordTranslator</h1>
-    <br>
     <b>
+        This plugin is a plugin that use properties values to convert custom words or simple words into korean word used in real project
         <a href="https://github.com/hodolee246/CustomWordTranslator">GitHub</a>
     </b>
-    <br>
-    <b>
-        Translate CustomWord plugin For Matey Company
-    </b>
-    <br>
     <ul>
-        <li>Translate : ctrl+1</li>
+        <li>Translate Dialog : ctrl+1</li>
         <li>Translate Modal : ctrl+2</li>
     </ul>
+    <br>
+    <b>
+        This plugin is For an "Matey" Company
+    </b>
     ]]></description>
 
     <change-notes><![CDATA[
@@ -38,13 +37,13 @@
     </extensions>
 
     <actions>
-        <action id="action.impl.SearchAndTranslatorAction" class="action.impl.SearchAndTranslatorAction"
-                text="action.impl.SearchAndTranslatorAction" description="translator dialog">
+        <action id="action.impl.MessageDialogAction" class="action.impl.MessageDialogAction"
+                text="action.impl.MessageDialogAction" description="translator dialog">
             <keyboard-shortcut first-keystroke="control 1" keymap="$default"/>
         </action>
 
-        <action id="action.impl.DialogAction" class="action.impl.DialogAction"
-                text="action.impl.DialogAction" description="translator modal">
+        <action id="action.impl.TranslateDialogAction" class="action.impl.TranslateDialogAction"
+                text="action.impl.TranslateDialogAction" description="translator modal">
             <keyboard-shortcut first-keystroke="control 2" keymap="$default"/>
         </action>
     </actions>

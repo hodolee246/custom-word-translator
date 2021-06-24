@@ -1,6 +1,6 @@
 package form.listener;
 
-import action.SearchAndTranslator;
+import action.TranslateDialog;
 
 import javax.swing.*;
 import java.awt.event.KeyAdapter;
@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
  *
  * @author Jeon InWoo
  */
-public class KeyReleasedListener extends KeyAdapter implements SearchAndTranslator {
+public class KeyReleasedListener extends KeyAdapter implements TranslateDialog {
 
     private JTextArea resultArea;
     private JTextField textField;
@@ -30,12 +30,12 @@ public class KeyReleasedListener extends KeyAdapter implements SearchAndTranslat
 
     @Override
     public void keyReleased(KeyEvent e) {
-        String userInput = textField.getText();
+        String userInputText = textField.getText();
 
-        if (userInput.isBlank()) {
+        if (userInputText.equals("")) {
             resultArea.setText("");
-        } else if (userInputValidate(userInput) || isBackSpaceKey(e.getKeyCode())) {
-            dialogReplaceLogic(resultArea, textField);
+        } else if (userInputValidate(userInputText) || isBackSpaceKey(e.getKeyCode())) {
+            dialogReplaceLogic(resultArea, userInputText);
         }
     }
 
