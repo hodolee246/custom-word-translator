@@ -38,7 +38,7 @@ public class MessageDialogAction extends AnAction {
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent e) {
-        if (! isUserInput(e.getData(CommonDataKeys.NAVIGATABLE))) {
+        if (isUserInput(e.getData(CommonDataKeys.NAVIGATABLE))) {
             Navigatable nav = e.getData(CommonDataKeys.NAVIGATABLE);
             String userInputData = nav.toString();
             String dialogValue = WRONG_DATA;
@@ -53,7 +53,7 @@ public class MessageDialogAction extends AnAction {
     }
 
     private boolean isUserInput(Navigatable nav) {
-        return nav == null;
+        return nav != null;
     }
 
     private boolean isKeyExistence(String key) {
