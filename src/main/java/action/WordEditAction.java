@@ -1,9 +1,10 @@
-package action.impl;
+package action;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
-import form.TranslateDialogForm;
+import form.WordEditModalForm;
 import org.jetbrains.annotations.NotNull;
+
 
 /**
  * <pre>
@@ -12,12 +13,12 @@ import org.jetbrains.annotations.NotNull;
  *
  * @author Jeon InWoo
  */
-public class TranslateDialogAction extends AnAction {
+public class WordEditAction extends AnAction {
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent anActionEvent) {
-        TranslateDialogForm dialog = new TranslateDialogForm();
-        dialog.onShowing(anActionEvent);
+        WordEditModalForm dialogForm = new WordEditModalForm();
+        dialogForm.onShowing(anActionEvent);
     }
 
 }

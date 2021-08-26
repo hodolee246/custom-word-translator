@@ -4,8 +4,8 @@ plugins {
 }
 
 group 'org.example'
-version '0.1'
-description 'FristPlugin'
+version '0.2'
+description 'CustomWordTranslator'
 
 repositories {
     mavenCentral()
@@ -28,6 +28,8 @@ patchPluginXml {
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    // https://mvnrepository.com/artifact/org.mockito/mockito-all
+    testImplementation 'org.mockito:mockito-all:1.10.19'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }
 

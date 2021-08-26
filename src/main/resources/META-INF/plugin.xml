@@ -1,28 +1,31 @@
 <idea-plugin>
     <id>org.example.CustomWordTranslator</id>
     <name>CustomWordTranslator</name>
-    <version>0.1</version>
-    <vendor email="hodolee@matey.co.kr" url="https://github.com/hodolee246/CustomWordTranslator">hodolee246</vendor>
+    <version>0.2</version>
+    <vendor email="hodolee386@gmail.co.kr" url="https://github.com/hodolee246/CustomWordTranslator">hodolee246</vendor>
 
     <description><![CDATA[
     <h1>CustomWordTranslator</h1>
     <b>
-        This plugin is a plugin that use properties values to convert custom words or simple words into korean word used in real project
-        <a href="https://github.com/hodolee246/CustomWordTranslator">GitHub</a>
+        This plugin is a plugin that converts registered words into custom words.
+        <br>
+        <a href="https://github.com/hodolee246/custom-word-translator#readme">readme</a>
+        <br>
+        <a href="https://github.com/hodolee246/CustomWordTranslator">github</a>
     </b>
     <ul>
-        <li>Translate Dialog : ctrl+1</li>
-        <li>Translate Modal : ctrl+2</li>
+        <li>Translate Word Dialog : ctrl+1</li>
+            <ul><li>convert project variable to words</li></ul>
+        <li>Edit Words modal : ctrl+2</li>
+            <ul><li>Ability to edit words you use</li></ul>
     </ul>
     <br>
-    <b>
-        This plugin is For an "Matey" Company
-    </b>
     ]]></description>
 
     <change-notes><![CDATA[
     <ul>
         <li>0.1 : Project Init</li>
+        <li>0.2 : Translate modal Extend</li>
     </ul>
     ]]></change-notes>
 
@@ -37,15 +40,16 @@
     </extensions>
 
     <actions>
-        <action id="action.impl.MessageDialogAction" class="action.impl.MessageDialogAction"
-                text="action.impl.MessageDialogAction" description="translator dialog">
+        <action id="action.MessageDialogAction" class="action.MessageDialogAction"
+                text="action.MessageDialogAction" description="translator dialog">
             <keyboard-shortcut first-keystroke="control 1" keymap="$default"/>
         </action>
 
-        <action id="action.impl.TranslateDialogAction" class="action.impl.TranslateDialogAction"
-                text="action.impl.TranslateDialogAction" description="translator modal">
+        <action id="action.WordEditAction" class="action.WordEditAction"
+                text="action.WordEditAction" description="word update modal">
             <keyboard-shortcut first-keystroke="control 2" keymap="$default"/>
         </action>
+
     </actions>
-    <idea-version since-build="211.*"></idea-version>
+    <idea-version since-build="201.*"></idea-version>
 </idea-plugin>
