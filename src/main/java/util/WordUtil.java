@@ -35,6 +35,7 @@ public class WordUtil {
     }
 
     public void readData() {
+        WordFileUtil.createSettingFile();
         String line;
         String data;
         wordMap = new HashMap<>();
@@ -47,23 +48,7 @@ public class WordUtil {
             }
         } catch (IOException ignored) {}
 
-        keyList = new ArrayList(Arrays.asList(wordMap.keySet().toArray()));
-        keyList = Collections.synchronizedList(keyList);
-        keyList.sort(Comparator.naturalOrder());
-
-        synchronized (keyList) {
-            StringBuilder wordData = new StringBuilder();
-
-            for (String key : keyList) {
-                wordData.append(key).append("\t").append(findValueByKey(key)).append("\n");
-            }
-
-            setWordData(wordData.toString());
-        }
-    }
-
-    private void setWordData(String wordData) {
-        this.wordData = wordData;
+        setWordData();
     }
 
     public String findValueByKey(String key) {
@@ -72,6 +57,22 @@ public class WordUtil {
         }
 
         return wordMap.get(key);
+    }
+
+    private void setWordData() {
+        keyList = new ArrayList(Arrays.asList(wordMap.keySet().toArray()));
+        keyList = Collections.synchronizedList(keyList);
+        keyList.sort(Comparator.naturalOrder());
+
+        synchronized (keyList) {
+            StringBuilder readData = new StringBuilder();
+
+            for (String key : keyList) {
+                readData.append(key).append("\t").append(findValueByKey(key)).append("\n");
+            }
+
+            this.wordData = readData.toString();
+        }
     }
 
     public void writeWordData(String wordData) {

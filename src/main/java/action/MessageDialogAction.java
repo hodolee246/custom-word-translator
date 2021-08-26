@@ -25,7 +25,6 @@ public class MessageDialogAction extends AnAction {
     private WordUtil wordUtil;
 
     public MessageDialogAction() {
-        WordFileUtil.createSettingFile();
         wordUtil = new WordUtil();
     }
 
