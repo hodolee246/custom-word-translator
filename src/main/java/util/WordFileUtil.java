@@ -94,7 +94,7 @@ public class WordFileUtil {
             "과정\tcrse\n" +
             "관\tpipe\n" +
             "관리\tmanage\n" +
-            "관리자\tauthory,mngr\n" +
+            "관리자\tauthory, mngr\n" +
             "관부\tcrown\n" +
             "관찰\tobserv\n" +
             "교사\ttchr\n" +
@@ -111,13 +111,13 @@ public class WordFileUtil {
             "급액\twtrsply\n" +
             "기간\tpd\n" +
             "기관\torgn\n" +
-            "기본\tb,bass\n" +
+            "기본\tb, bass\n" +
             "기술\ttchnlgy\n" +
             "기준\tstdr\n" +
             "기타\tetc\n" +
             "길이\tlt\n" +
             "꽃\tflwr\n" +
-            "난방\theating,ht\n" +
+            "난방\theating, ht\n" +
             "난방관\thp\n" +
             "난방관제어\thc\n" +
             "난이도\tdffly\n" +
@@ -154,7 +154,7 @@ public class WordFileUtil {
             "대상\ttrgt\n" +
             "댓글\trply\n" +
             "데이터\tdata\n" +
-            "도\tangle\n" +
+            "도\tdo\n" +
             "도메인\tdomn\n" +
             "도움말\thpcm\n" +
             "도입\tindc\n" +
@@ -169,11 +169,11 @@ public class WordFileUtil {
             "디폴트\tdflt\n" +
             "라인\tline\n" +
             "랭킹\trankng\n" +
-            "량\tquan\n" +
+            "량\tsola\n" +
             "레벨\tlevel\n" +
             "로그인\tlgn\n" +
             "로딩\tldadng\n" +
-            "링크\turl,link\n" +
+            "링크\tlink, url\n" +
             "마디\tnode\n" +
             "만료\texp\n" +
             "만족도\tsatsfc\n" +
@@ -184,14 +184,14 @@ public class WordFileUtil {
             "메인\tmain\n" +
             "메일\temail\n" +
             "면적\tar\n" +
-            "명\tds\n" +
+            "명\tnm\n" +
             "모바일\tmobile\n" +
             "목적\tpurps\n" +
             "목표\tgoal\n" +
             "문의\tinqry\n" +
             "문자메시지\tsms\n" +
             "문제\tques\n" +
-            "물\tpost\n" +
+            "물\twater\n" +
             "미세조정\tfinetune\n" +
             "미션\tmisn\n" +
             "밀도\tdn\n" +
@@ -225,9 +225,9 @@ public class WordFileUtil {
             "복호화\tdec\n" +
             "부모\tparnts\n" +
             "부여\talwnc\n" +
-            "분\tse\n" +
+            "분\tmi\n" +
             "분류\tcls\n" +
-            "분무\tspray,mist\n" +
+            "분무\tmist, spray\n" +
             "분석\tanals\n" +
             "비\train\n" +
             "비교\tcmpr\n" +
@@ -243,13 +243,13 @@ public class WordFileUtil {
             "사전\tdic\n" +
             "사진기\tcamera\n" +
             "삭제\tdel\n" +
-            "산\tcalc\n" +
+            "산\tacid\n" +
             "산도\tacdt\n" +
             "상단\tupend\n" +
             "상대\trl\n" +
             "상대습도\trh\n" +
             "상부\ttop\n" +
-            "상세\td,detail\n" +
+            "상세\td, detail\n" +
             "상위\tupper\n" +
             "상태\tsttus\n" +
             "생리\tpysiclg\n" +
@@ -285,10 +285,10 @@ public class WordFileUtil {
             "스위치\tswitch\n" +
             "슬라브\tslab\n" +
             "습구\twet\n" +
-            "습도\trh\n" +
+            "습도\thmdt\n" +
             "습도부족분\thd\n" +
-            "시\tsmtm\n" +
-            "시간\ttm,time\n" +
+            "시\thr\n" +
+            "시간\ttime, tm\n" +
             "시간대\ttmzon\n" +
             "시구\tsigu\n" +
             "시군\tsigun\n" +
@@ -300,7 +300,7 @@ public class WordFileUtil {
             "시작\tstart\n" +
             "식물\tplnt\n" +
             "실습\tprct\n" +
-            "실시간\trltm\n" +
+            "실시간\ttime, tm\n" +
             "썸네일\tthmb\n" +
             "쓰기\twrt\n" +
             "아래쪽\tbot\n" +
@@ -337,7 +337,7 @@ public class WordFileUtil {
             "엽병\tpetiole\n" +
             "영농\tfarmng\n" +
             "영문\teng\n" +
-            "영상\tmvp\n" +
+            "영상\tvido\n" +
             "영향\taffc\n" +
             "오답\ticrct\n" +
             "오류\terr\n" +
@@ -347,7 +347,7 @@ public class WordFileUtil {
             "올림값\tround\n" +
             "완료\tcompt\n" +
             "외기온도\toutTemp\n" +
-            "외부\tinout\n" +
+            "외부\text\n" +
             "요소\tfactor\n" +
             "요청\trequst\n" +
             "용마루\trdgroof\n" +
@@ -356,11 +356,11 @@ public class WordFileUtil {
             "운영체제\tos\n" +
             "원본\torg\n" +
             "원시\torg\n" +
-            "월\tm,mt\n" +
+            "월\tm, mt\n" +
             "월일\tpolicy\n" +
             "위도\tlati\n" +
             "위력\tpowr\n" +
-            "위치\tswitch\n" +
+            "위치\tlc\n" +
             "유동\tflow\n" +
             "유동팬\tcirclfan\n" +
             "유형\ttype\n" +
@@ -376,8 +376,8 @@ public class WordFileUtil {
             "이슬점온도\tdp\n" +
             "이전\tbfe\n" +
             "인증\tcrtfc\n" +
-            "일\temail\n" +
-            "일련번호\tseq,bseq\n" +
+            "일\td\n" +
+            "일련번호\tbseq, seq\n" +
             "일몰\tsunset\n" +
             "일사\tsola\n" +
             "일시\tdtm\n" +
@@ -397,10 +397,10 @@ public class WordFileUtil {
             "작물\tcrops\n" +
             "작성\twritng\n" +
             "작업\topert\n" +
-            "장\tdefect\n" +
+            "장\thed\n" +
             "장비\teqpmn\n" +
             "장애\ttrobl\n" +
-            "재\texists\n" +
+            "재\tre\n" +
             "재배\tctvt\n" +
             "재배형태\tcltv\n" +
             "재식\tplntng\n" +
@@ -423,7 +423,7 @@ public class WordFileUtil {
             "정지\tstop\n" +
             "정책\tlmtt\n" +
             "제목\ttitle\n" +
-            "제어\thc\n" +
+            "제어\tctrl\n" +
             "제어기\tcntlr\n" +
             "제한\tlmtt\n" +
             "조건\tcnd\n" +
@@ -471,7 +471,7 @@ public class WordFileUtil {
             "천창\ttop\n" +
             "체적\tvl\n" +
             "체크\tchk\n" +
-            "초\tfrst\n" +
+            "초\tsecnd\n" +
             "초기화\tinitl\n" +
             "초세\tpltvigor\n" +
             "총합\ttot\n" +
@@ -494,7 +494,7 @@ public class WordFileUtil {
             "컨설턴트\tcnstnt\n" +
             "컨설팅\tcnsl\n" +
             "컨텐츠\tcntnts\n" +
-            "코드\tcode,cd\n" +
+            "코드\tcd, code\n" +
             "퀴즈\tquiz\n" +
             "키\tkey\n" +
             "키워드\tkwrd\n" +
@@ -516,7 +516,7 @@ public class WordFileUtil {
             "페이지\tpage\n" +
             "편차\tdcln\n" +
             "평가\tevl\n" +
-            "평균\tdyrg\n" +
+            "평균\tavg\n" +
             "포맷\tfrmat\n" +
             "포인트\tpoint\n" +
             "포화수분함량\tsmc\n" +
@@ -541,7 +541,7 @@ public class WordFileUtil {
             "학생\tstdn\n" +
             "학습\tlrnng\n" +
             "학적\tsknrgs\n" +
-            "합\ttot\n" +
+            "합\tsum\n" +
             "항목\tiem\n" +
             "해발고도\taltitude\n" +
             "해설\texplna\n" +
