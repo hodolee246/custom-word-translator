@@ -8,11 +8,10 @@
     <h1>CustomWordTranslator</h1>
     <b>
         This plugin is a plugin that converts registered words into custom words.
-        <br>
         <a href="https://github.com/hodolee246/custom-word-translator#readme">readme</a>
-        <br>
         <a href="https://github.com/hodolee246/CustomWordTranslator">github</a>
     </b>
+    <br><br>
     <b>Translate Word Dialog : ctrl+1</b>
         <ul><li>convert project variable to words</li></ul>
     <b>Edit Words modal : ctrl+2</b>
