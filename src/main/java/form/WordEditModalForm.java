@@ -118,8 +118,8 @@ public class WordEditModalForm extends JDialog implements WordEditModal {
     }
 
     private boolean isUserInput() {
-        return ! (keyTextField.getText().equals("")
-                || valueTextField.getText().equals("")
+        return ! (keyTextField.getText().trim().equals("")
+                || valueTextField.getText().trim().equals("")
                 || keyTextField.getText().equals(KEY_PLACEHOLDER_TEXT)
                 || valueTextField.getText().equals(VALUE_PLACEHOLDER_TEXT));
     }

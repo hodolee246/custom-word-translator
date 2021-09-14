@@ -1,5 +1,7 @@
 package util;
 
+import action.ExceptionDialog;
+
 import java.io.*;
 import java.util.*;
 
@@ -46,17 +48,18 @@ public class WordUtil {
                 String value = data.replaceAll(".+\\t", "");
                 wordMap.put(key, value);
             }
-        } catch (IOException ignored) {}
+        } catch (IOException e) {
+            ExceptionDialog.showExceptionDialog();
+        }
 
         setWordData();
     }
 
     public String findValueByKey(String key) {
-        if (wordMap.isEmpty()) {
-            return null;
+        if (wordMap.get(key) != null) {
+            return wordMap.get(key);
         }
-
-        return wordMap.get(key);
+        return "조회 결과가 없습니다.";
     }
 
     private void setWordData() {
@@ -80,6 +83,7 @@ public class WordUtil {
             writer.write(wordData);
             writer.flush();
         } catch (IOException ignored) {}
+
         readData();
     }
 

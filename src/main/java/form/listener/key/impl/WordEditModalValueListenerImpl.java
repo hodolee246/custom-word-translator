@@ -33,7 +33,7 @@ public class WordEditModalValueListenerImpl extends KeyAdapter implements WordEd
             return;
         }
 
-        String userInputText = VALUE_TEXT_FIELD.getText();
+        String userInputText = VALUE_TEXT_FIELD.getText().toLowerCase();
 
         if (userInputText.equals("") && isPlaceHolderText(KEY_TEXT_FIELD.getText())) {
             WordUtil wordUtil = new WordUtil();

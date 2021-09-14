@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>org.example.CustomWordTranslator</id>
     <name>CustomWordTranslator</name>
-    <version>0.3</version>
+    <version>0.4</version>
     <vendor email="hodolee386@gmail.co.kr" url="https://github.com/hodolee246/CustomWordTranslator">hodolee246</vendor>
 
     <description><![CDATA[
@@ -24,6 +24,7 @@
         <li>0.1 : Project Init</li>
         <li>0.2 : Translate modal Extend</li>
         <li>0.3 : Update InitWord</li>
+        <li>0.4 : Word Dialog Extend</li>
     </ul>
     ]]></change-notes>
 

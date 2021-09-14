@@ -5,8 +5,8 @@ import java.util.regex.Pattern;
 
 public interface WordEditModalKeyListener {
 
-    String ENG_VALIDATE_REGEX = "^[a-zA-Z\\s0-9]+$";
-    String KOR_VALIDATE_REGEX = "^[가-힣\\s0-9]+$";
+    String ENG_VALIDATE_REGEX = "^[a-zA-Z0-9]+$";
+    String KOR_VALIDATE_REGEX = "^[가-힣0-9]+$";
     String KEY_PLACEHOLDER_TEXT = "용어를 입력해 주세요.";
     String VALUE_PLACEHOLDER_TEXT = "약어를 입력해 주세요.";
 

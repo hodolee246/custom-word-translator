@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 import util.WordFileUtil;
 import util.WordUtil;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * <pre>

@@ -50,9 +50,9 @@ public interface WordEditModal {
                 .filter(entry -> {
                     switch (trigger) {
                         case "key":
-                            return entry.getKey().contains(userInputText);
+                            return entry.getKey().toLowerCase().contains(userInputText);
                         case "value":
-                            return entry.getValue().contains(userInputText);
+                            return entry.getValue().toLowerCase().contains(userInputText);
                         default:
                             return true;
                     }

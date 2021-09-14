@@ -16,9 +16,10 @@ import org.jetbrains.annotations.NotNull;
 public class WordEditAction extends AnAction {
 
     @Override
-    public void actionPerformed(@NotNull AnActionEvent anActionEvent) {
+    public void actionPerformed(@NotNull AnActionEvent e) {
+        ExceptionDialog.setAnActionEvent(e);
         WordEditModalForm dialogForm = new WordEditModalForm();
-        dialogForm.onShowing(anActionEvent);
+        dialogForm.onShowing(e);
     }
 
 }
